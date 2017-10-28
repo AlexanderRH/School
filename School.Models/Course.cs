@@ -1,7 +1,10 @@
-﻿namespace School.Models
+﻿using Dapper.Contrib.Extensions;
+
+namespace School.Models
 {
     public class Course
     {
+        [Key]
         public int CourseID { get; set; }
         public string Title { get; set; }
         public int Credits { get; set; }
